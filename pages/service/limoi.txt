@@ -1,0 +1,29 @@
+icone phone 
+<i class="fa-solid fa-phone"></i>
+
+icon localisation
+<i class="fa-solid fa-location-dot"></i>
+ post mail 
+<i class="fa-duotone fa-envelope"></i>
+
+twiter 
+<i class="fa-brands fa-twitter"></i>
+
+facebook
+<i class="fa-brands fa-facebook-f"></i>
+
+linkdin
+<i class="fa-brands fa-linkedin"></i>
+
+instagra
+<i class="fa-brands fa-instagram"></i>
+
+
+youtube
+<i class="fa-brands fa-youtube"></i>
+
+search
+<i class="fa-solid fa-magnifying-glass"></i>
+
+deroulant
+<i class="fa-solid fa-caret-down"></i>
