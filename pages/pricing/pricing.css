@@ -1,0 +1,283 @@
+:root{
+    --bleuFonce: #091e3e;
+    --bleuFonce1: #091a37; 
+    --bleuClair: #06a3da;
+    --grisClair: #dcd7cc;
+    --bleuClair1: #eef9ff; 
+    --bleuClair2: #e9f4fa; 
+    --grisClair1: #828f9e;
+}
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+.topbar{
+    background-color: #091E3E;
+    width: 100%;
+    height: 5vh;
+    color: white;
+    padding-top: 0.8%;
+    display: flex;
+    justify-content: space-between;
+}
+.topbar .info{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.topbar .iconeitem{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.topbar .iconeitem li{
+    border: 1px solid #fff;
+    width: 10%;
+    height: 80%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middlebar{
+    width: 100%;
+
+
+}
+.middlebar .logo{
+    color: white;
+    font-size: 20px;
+}
+.prices{
+    /* border: 1px solid black; */
+    width: 70%;
+    height: 70vh;
+    margin: 2% auto;
+    line-height: 1.5em;
+}
+.prices h4{
+    color:var(--bleuClair) ;
+    text-align: center;
+}
+.prices .toppricespar{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.soulignement{
+    width: 10%;
+    height: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin: 2% auto;
+    padding-left: 1%;
+    
+}
+.prices .toppricesunderline1{
+   
+   width: 8px; 
+    height: 3px;
+   background-color: var(--bleuClair);
+
+}
+.prices .toppricesunderline2{
+    width: 75px; 
+    height: 3px;
+   background-color: var(--bleuClair);
+}
+.bottomprices{
+    display: flex;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 75%;
+}
+.bottomprices .bottompricesitem{
+    padding-top: 2%;
+    width: 33%;
+    height: 100%;
+    background-color: var(--bleuClair2);
+    text-align: start;
+}
+.bottomprices .bottompricesitem .titleitem{
+    color: var(--bleuClair);
+    padding: 0.5% 8%;
+    text-align: left ;
+}
+.bottomprices .bottompricesitem p{
+    padding-left:  8%; 
+    margin-bottom: 5%;
+    font-size: 13px;
+    color: var(--grisClair1);
+}
+.bottompricesitem sup{
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+.bottompricesitem  span{
+    font-weight: bold; 
+    font-size: 28px;
+    color: black;
+    
+}
+.bottompricesitem .month{
+    color: black !important;
+
+}
+.bottompricesitem ul{
+    padding-left: 8%;
+    color: var(--grisClair1);
+}
+.bottompricesitem ul li i{
+    float: right;
+    margin-right: 8%;
+}
+.bottompricesitem button{
+    background-color:var(--bleuClair) ;
+    border: none;
+    border-radius: 2px;
+    width: 35%;
+    height: 8%;
+    margin-left: 8%;
+    margin-top: 5%;
+}
+.bottompricesitem button a{
+    text-decoration: none;
+    color: white;
+    
+}
+#middleitem{
+    width: 34%;
+    background-color: white;
+    box-shadow: 0.1px 0.1px 2px black;
+    z-index: 2;
+}
+.quote{
+    border: 1px solid black;
+    width: 70%;
+    height: 70vh;
+    margin: 10% auto;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+}
+.quote .quoteleft{
+    border: 1px solid black;
+}
+.quote .quoteleft .topquote{
+    height: 33%;
+    border: 1px solid red;
+    line-height: 1.5em;
+}
+.quote .quoteleft .topquote h4{
+    font-size: 14px;
+    color: var(--bleuClair);
+}
+.quote .quoteleft .topquote p{
+    font-weight: bold;
+    font-size: 20px;
+}.soulignement2{
+    width: 17%;
+    height: 5px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    margin: 2% 0;
+    
+}
+.topquote .soulignement2 .topquoteunderline1{
+   
+   width: 8px; 
+    height: 3px;
+   background-color: var(--bleuClair);
+
+}
+.topquote .topquoteunderline2{
+    width: 75px; 
+    height: 3px;
+   background-color: var(--bleuClair);
+}
+.quote .middlequote{
+    border:1px solid green;
+    height:33%;
+}
+.quote .middlequote ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2% ;
+    margin-bottom: 3%;
+    margin-right: 8%;
+    border: 1px solid pink;
+    font-size: 14px;
+}
+.quote .middlequote .middlequotetexte{
+    font-size: 12px;
+    color: var(--grisClair1);
+    padding-top: 2%;
+}
+.quote .bottomquote{
+    border: 1px solid blue;
+    height: 33%;
+    display: flex;
+    font-size: 14px;
+    margin-top: 2%;
+}
+.quote .bottomquote i{
+    background-color: var(--bleuClair);
+    width: 8%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quote .bottomquote span{
+    color: var(--bleuClair);
+    font-size: 15px;
+}
+.quote .quoteright{
+    /* background-color: var(--bleuClair); */
+    /* border: 1px solid blue; */
+}
+form{
+    border: 1px solid red;
+    height: 90%;
+    margin: 5%;
+    /* display: block; */
+}
+form input{
+    width: 99%;
+    height: 10%;
+    margin-bottom: 5%;
+}
+form select{
+    width: 100%;
+    height: 10%;
+    margin-bottom: 5%;
+}
+form input::placeholder{
+    padding-left: 2%;
+}
+form select{
+    color: var(--grisClair1);
+    padding-left: 2%
+}
+form textarea{
+    width: 100%;
+    height: 40%;
+}
+textarea::placeholder{
+    color: var(--grisClair1);
+    padding: 2% ;
+    padding-left: 3%;
+}
+form button{
+    width: 100%;
+    height: 10%;
+    margin-top: 3%;
+    color: white;
+    background-color: var(--bleuFonce1);
+    border: none;
+}
