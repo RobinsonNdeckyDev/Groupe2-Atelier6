@@ -1,0 +1,381 @@
+/* Header */
+/* header{
+    border: 1px solid red;
+} */
+
+header .Tete .teteContainer{
+    border: 1px solid black;
+    display: flex;
+    background-color: var(--bleuFonce);
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+.teteContainer .coordonnees{
+    display: flex;
+}
+
+.teteContainer .coordonnees .coods{
+    display: flex;
+    margin-right: 10px;
+}
+
+.coods .icon{
+    margin-right: 5px;
+}
+
+.coods p{
+    color: white;
+}
+
+.icones span{
+    margin-left: 15px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+header .detailBack{
+    background: #17475957;
+}
+
+header .TeteDetails{
+    background: url(../../public/images/accueil/image1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* TeteDescript */
+
+.TeteDescript nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px;
+    border-bottom: 2px solid rgba(190, 186, 186, 0.627);
+}
+
+nav .navRight{
+    border: 1px solid goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navRight .menu{
+    display: flex;
+}
+
+.navRight .menu ul{
+    display: flex;
+    padding-top: 10px;
+}
+
+.navRight ul li{
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+.navRight ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.navRight ul li select{
+    border: none;
+    background: none;
+    color: white;
+}
+
+.navRight .menu span{
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+nav .nav-left h1{
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+}
+
+nav .nav-left i{
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.navRight .boutonNav button{
+    background: var(--bleuClair);
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+}
+
+/*  TeteTile */
+.TeteTitle{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.TeteTitle .titleContainer{
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titleContainer h5{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4%;
+    color: white;
+}
+
+.titleContainer p{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 4%;
+    color: white;
+}
+
+.titleContainer .titleBtns{
+    width: 35%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.titleContainer .titleBtns button{
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+
+.titleContainer .titleBtns button:nth-child(1){
+    background-color: var(--bleuClair);
+}
+
+.titleContainer .titleBtns button:nth-child(2){
+    background-color: rgba(255, 255, 255, 0.047);
+}
+
+
+/* Card Tete */
+header .cardTete{
+    border: 1px solid orange;
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    bottom: 60px;
+}
+
+.cardTete .cardContainer{
+    display: flex;
+}
+
+.cardContainer .card{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.cardContainer .cardIcon:nth-child(1),.cardIcon:nth-child(3){
+    border: 1px solid white;
+    padding: 20px;
+    background-color: white;
+}
+
+.cardContainer .card .cardMid{
+    background-color: var(--bleuClair);
+}
+
+.cardContainer .card .cardMid p{
+    color: var(--bleuClair);
+}
+
+.cardContainer .card .cardMid p{
+    color: var(--bleuFonce);
+}
+
+.cardContainer .card i:nth-child(1),i:nth-child(3){
+    color: var(--bleuClair);
+    font-size: 18px;
+}
+
+.cardContainer .card p:nth-child(1), .p:nth-child(3){
+    padding-left: 15px;
+    color: white;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.cardContainer .card:nth-child(2){
+    background-color: #eef9ff;
+}
+
+.cardContainer .card:nth-child(1),.card:nth-child(3){
+    background-color: var(--bleuClair);
+}
+
+/* main */
+
+/* section1 */
+
+main .section1{
+    border: 1px solid red;
+    padding: 4% 10%;
+}
+
+.section1Cont h2{
+    text-align: center;
+    font-size: 30px;
+    color: var(--bleuFonce);
+    margin-bottom: 4%;
+}
+
+.section1Cont .cardSection1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    row-gap: 20px;
+}
+
+.section1Cont .SectiCard{
+    padding: 8% 15%;
+    background-color: #eef9ff;
+}
+
+.SectiCard h3,p{
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.SectiCard .sectCardIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectCardIcon span{
+    margin-bottom: 20px;
+    padding: 4%;
+    transform: rotate(50deg);
+    background-color: var(--bleuClair);
+}
+
+.sectCardIcon i{
+    font-size: 40px;
+    transform: rotate(-50deg);
+}
+
+.cardSection1 .sect{
+    background-color: var(--bleuClair);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardSection1 .sect span{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+/* section2 */
+main .section2{
+    border: 1px solid red;
+    padding: 4% 10%;
+}
+
+/* .section2 .section2Cont{
+    border: 1px solid;
+} */
+
+.section2Cont h2{
+    text-align: center;
+    font-size: 30px;
+    color: var(--bleuFonce);
+    margin-bottom: 4%;
+}
+
+.section2Cont .sectCard2Cont:nth-child(1),.sectCard2Cont:nth-child(3){
+    background-color: #eef9ff;
+}
+
+.section2Cont .sectCards2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* .sectCards2 .sectCard2Cont{
+    border: 1px solid;
+} */
+
+.sectCard2Cont .Sc2Head{
+    padding: 20px 25px;
+    margin-bottom: 2%;
+}
+
+.sectCard2Cont .Sc2Head h4{
+    color: var(--bleuClair);
+}
+
+.sectCard2Cont .Sc2Head h6{
+    color: #898c9e;
+    font-size: 12px;
+    margin-top: 1%;
+}
+
+.sectCard2Cont .sectCard2Body{
+    padding: 20px 25px;
+}
+
+.sectCard2Body .price span{
+    font-size: 30px;
+}
+
+.sectCard2Body .price{
+    color: var(--bleuFonce);
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.sectCard2Body .detail{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #9b9798;
+    font-size: 16px;
+}
+
+.detail .fa-check{
+    color: var(--bleuClair);
+    font-size: 18px;
+}
+
+.detail .fa-xmark{
+    color: red;
+    font-size: 18px;
+}
+
+.cardSect2btn{
+    padding: 5px 25px;
+}
+
+.cardSect2btn button{
+    background-color: var(--bleuClair);
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+
+.section2Cont .card2Cont{
+    box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.227);
+}

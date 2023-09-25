@@ -1,0 +1,15 @@
+/* Variables */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bleuFonce: #091e3e;
+    --bleuFonce1: #091a37;
+    --bleuClair: #06a3da;
+    --grisClair: #dcd7cc;
+    --bleuClair1: #eef9ff;
+    --bleuClair2: #e9f4fa;
+    --grisClair1: #828f9e;
+}
