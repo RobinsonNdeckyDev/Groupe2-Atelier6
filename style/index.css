@@ -13,3 +13,7 @@
     --bleuClair2: #e9f4fa;
     --grisClair1: #828f9e;
 }
+
+body{
+    font-family: verdana;
+}

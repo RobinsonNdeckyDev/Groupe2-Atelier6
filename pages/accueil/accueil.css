@@ -54,7 +54,6 @@ header .TeteDetails{
 }
 
 nav .navRight{
-    border: 1px solid goldenrod;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +116,7 @@ nav .nav-left i{
 }
 
 .TeteTitle .titleContainer{
-    width: 45%;
+    width: 50%;
     margin: 0 auto;
     text-align: center;
 }
@@ -162,7 +161,6 @@ nav .nav-left i{
 
 /* Card Tete */
 header .cardTete{
-    border: 1px solid orange;
     position: relative;
     width: 60%;
     margin: 0 auto;
@@ -224,7 +222,6 @@ header .cardTete{
 /* section1 */
 
 main .section1{
-    border: 1px solid red;
     padding: 4% 10%;
 }
 
@@ -280,12 +277,11 @@ main .section1{
 
 .cardSection1 .sect span{
     font-weight: bold;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 /* section2 */
 main .section2{
-    border: 1px solid red;
     padding: 4% 10%;
 }
 
@@ -379,3 +375,362 @@ main .section2{
 .section2Cont .card2Cont{
     box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.227);
 }
+
+/* section3 */
+main .section3{
+    padding: 4% 10%;
+}
+
+.section3 h2{
+    text-align: center;
+    font-size: 30px;
+    color: var(--bleuFonce);
+    margin-bottom: 4%;
+}
+
+.section3 .sectCards3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* .sectCards3 .sectCard3Cont{
+    border: 1px solid blue;
+} */
+
+.sectCard3Cont .Sc3Head{
+    display: flex;
+    padding: 4% 10%;
+}
+
+.Sc3Head .img{
+    width: 20%;
+}
+
+.Sc3Head .img img{
+    width: 100%;
+    height: 60px;
+}
+
+.Sc3Head .client{
+    padding-left: 20px;
+    line-height: 30px;
+}
+
+.client p{
+    text-align: left;
+}
+
+.client .nom{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--bleuClair);
+}
+
+.client .proff{
+    color: #b4adaf;
+}
+
+.sectCard3Body .para{
+    text-align: left;
+    padding: 4% 10%;
+}
+
+.para p{
+    text-align: left;
+}
+
+.sectCard3Cont:nth-child(1),.sectCard3Cont:nth-child(3){
+    background-color: #eef9ff;
+}
+
+.sectCard3Cont:nth-child(2){
+    box-shadow: 5px 5px 10px 5px rgba(128, 128, 128, 0.17);
+}
+
+/* main Section 4 */
+
+.section4{
+    padding: 4% 10%;
+}
+
+/* .section4 .section4Cont{
+    border: 1px solid;
+} */
+
+.section4Cont .sect4T{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: var(--bleuClair);
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.section4Cont h2{
+    text-align: center;
+    font-size: 30px;
+    color: var(--bleuFonce);
+    margin-bottom: 4%;
+}
+
+.section4Cont .sectCards4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.sectCards4 .sectCard4Cont{
+    position: relative;
+    background-color: #eef9ff;
+}
+
+.sectCard4Cont .img img{
+    width: 100%;
+}
+
+.sectCard4Cont .sectCard4Body{
+    padding: 4% 10%;
+}
+
+.sectCard4Body .client4 p{
+    text-align: center;
+}
+
+.client4 .nom{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--bleuClair);
+}
+
+.client4 .proff{
+    color: #b4adaf;
+}
+
+.sect4Hov{
+    height: 10px;
+    background-color: chocolate;
+    /* bottom: 100px; */
+}
+
+.section5{
+    border: 1px solid red;
+    padding: 4% 10%;
+}
+
+.section5Cont .sect5T {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: var(--bleuClair);
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.section5Cont h2 {
+    text-align: center;
+    font-size: 30px;
+    color: var(--bleuFonce);
+    margin-bottom: 4%;
+}
+
+.section5Cont .sectCards5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.sectCards5 .sectCard5Cont{
+    border: 1px solid;
+    background-color: #eef9ff;
+}
+
+.sectCard5Cont .img img{
+    width: 100%;
+}
+
+.sectCard5Cont .img img:hover{
+    transform: scale(0.9);
+    padding: 1%;
+    border-bottom: 5px solid var(--bleuClair);
+}
+
+.sectCard5Cont .Item{
+    position: relative;
+    top: -240px;
+    background: var(--bleuClair);
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding: 5px 15px;
+    color: white;
+}
+
+.sectCard5Cont .detail{
+    padding: 0 10%;
+}
+
+.sectCard5Cont .detail p:nth-child(1){
+    margin-right: 10px;
+}
+
+.sectCard5Cont .detail span{
+    color: var(--bleuClair);
+    margin-right: 5px;
+}
+
+.sectCard5Cont .detail p{
+    text-align: left;
+}
+
+.sectCard5Cont .sectCard5Body{
+    padding: 0 10%;
+}
+
+.sectCard5Body h4{
+    color: var(--bleuFonce);
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.sectCard5Body p{
+    text-align: left;
+}
+
+.sectCard5Body button{
+    background: none;
+    border: none;
+    font-weight: bold;
+    color: var(--bleuClair);
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.sectCard5Body button span{
+    margin-left: 5px;
+}
+
+@media (max-width: 900px) {
+    .section1Cont .cardSection1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        row-gap: 20px;
+    }
+
+    .section1Cont h2 {
+        font-size: 20px;
+    }
+
+    .section2Cont h2 {
+        font-size: 20px;
+    }
+
+    .section2Cont .sectCards2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section3 h2 {
+        font-size: 20px;
+    }
+    
+    .section3 .sectCards3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section4Cont h2 {
+        font-size: 20px;
+    }
+    
+    .section4Cont .sectCards4 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section5Cont h2 {
+        font-size: 20px;
+    }
+    
+    .section5Cont .sectCards5 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    header .Tete .teteContainer {
+        border: 1px solid black;
+        display: block;
+        background-color: var(--bleuFonce);
+        padding: 10px 20px;
+    }
+
+    .teteContainer .coordonnees {
+        display: block;
+        margin-bottom: 15px;
+    }
+    
+    .teteContainer .coordonnees .coods {
+       justify-content: center;
+    }
+
+    .teteContainer .icones{
+        display: flex;
+        justify-content: center;
+    }
+
+    .TeteDescript .navRight .menu{
+        display: none;
+    }
+
+    .TeteTitle .titleContainer {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .titleContainer p {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 4%;
+        color: white;
+    }
+
+    .titleContainer .titleBtns{
+        display: block;
+    }
+
+    .titleContainer button{
+        margin-bottom: 3%;
+    }
+
+    header .cardTete {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        bottom: 0px;
+    }
+
+    .cardTete .cardContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        padding-top: 2%;
+    }
+
+    .cardContainer .card{
+        width: 100%;
+        display: block;
+        padding: 8px 0px;
+    }
+
+    .cardContainer .cardIcon{
+        width: 30%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
