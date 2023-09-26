@@ -157,19 +157,20 @@
     z-index: 2;
 }
 .quote{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 70%;
-    height: 70vh;
+    height: 60vh;
     margin: 10% auto;
     display: grid;
     grid-template-columns: 6fr 4fr;
 }
 .quote .quoteleft{
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    height: auto;
 }
 .quote .quoteleft .topquote{
     height: 33%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     line-height: 1.5em;
 }
 .quote .quoteleft .topquote h4{
@@ -184,7 +185,7 @@
     height: 5px;
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 2% 0;
     
 }
@@ -201,7 +202,7 @@
    background-color: var(--bleuClair);
 }
 .quote .middlequote{
-    border:1px solid green;
+    /* border:1px solid green; */
     height:33%;
 }
 .quote .middlequote ul{
@@ -210,7 +211,7 @@
     margin-top: 2% ;
     margin-bottom: 3%;
     margin-right: 8%;
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
     font-size: 14px;
 }
 .quote .middlequote .middlequotetexte{
@@ -219,7 +220,7 @@
     padding-top: 2%;
 }
 .quote .bottomquote{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: 33%;
     display: flex;
     font-size: 14px;
@@ -238,14 +239,14 @@
     font-size: 15px;
 }
 .quote .quoteright{
-    /* background-color: var(--bleuClair); */
+    background-color: var(--bleuClair);
     /* border: 1px solid blue; */
 }
 form{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 90%;
     margin: 5%;
-    /* display: block; */
+    
 }
 form input{
     width: 99%;
