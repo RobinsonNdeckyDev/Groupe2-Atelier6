@@ -366,6 +366,7 @@ footer .footerContainer {
     width: 30%;
     padding: 5% 3%;
     background-color: var(--bleuClair);
+    z-index: 1;
 }
 
 .contentLeft .top-section .logo {
@@ -588,6 +589,7 @@ footer .footerContainer {
         footer .copyR {
             position: relative;
             overflow: hidden;
+
         }
     
         footer .copyR p {
