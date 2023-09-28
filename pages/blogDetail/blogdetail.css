@@ -1,0 +1,143 @@
+:root{
+    --bleuFonce: #091e3e;  
+    --bleuFonce1: #091a37; 
+    --bleuClair3: #06a3da; 
+    --grisClair: #dcd7cc; 
+    --bleuClair1: #EEF9FF; 
+    --grisClair1: #828f9e;
+}
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+
+/* main */
+.container_detail{
+    display: grid;
+    grid-template-columns: 45% 30%;
+    gap: 5px;
+    padding: 10px;
+    justify-content: center;
+    /* text-align: center */
+      
+}
+
+.span1{
+    /* background-color: var(--bleuClair1); */
+    color: var(--bleuClair3);
+    font-size: 17px;
+    font-weight: bol;
+}
+
+
+
+input{
+    padding:5px;
+    width: 300px;
+    /* margin-top: 1%; */
+} 
+.fa-magnifying-glass{
+    background-color: var(--bleuClair3);
+    width: 30px;
+    height: 27px;
+    position: relative;
+    top: -3px;
+    /* text-align: center; */
+}
+h1{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: var(--bleuClair1);
+    padding: 15px;
+    width: 150px;
+}
+p{
+    color: var(--grisClair1);
+    font-size: 14px;
+
+}
+
+.rien{
+    background-color: var(--bleuClair3);
+    width: 20px;
+    height: 2px;
+}
+.rien1{
+    background-color: var(--bleuClair3);
+    width: 60px;
+    height: 2px;
+    margin-top: -3px;
+    margin-left: 35px;
+}
+
+.pcategorie{
+    background-color: var(--bleuClair1);
+    width: 350px;
+    height: 20px;
+    color: black;
+    padding: 10px;
+}
+.img_text_cote{
+    display: flex;
+    margin-top: 1%;
+}
+
+.text_cote{
+    /* width: 300px; */
+    padding: 2px;
+    margin-top: 0%;
+    /* height: 40px; */
+
+
+}
+
+.imagee
+{
+    display: flex;
+    margin-top: 1%;
+}
+.text-image{
+    background-color: var(--bleuClair1);
+    width: 300px;
+    padding: 2px;
+    margin-top: 0%;
+    /* height: 40px; */
+}
+span{
+    background-color: var(--bleuClair1);
+    padding: 10x;
+    text-align: center;
+    margin: 1%;
+}
+.tag{
+    line-height: 25px;
+
+}
+.plain_text{
+    
+}
+.p_plain_text{
+    font-size: 19px;
+    background-color: var(--bleuClair1);
+    text-align: center;
+    height: 200px;
+    padding: 15px; 
+}
+button{
+    background-color: var(--bleuClair3);
+    border: none;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: white;
+}
