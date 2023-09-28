@@ -11,6 +11,18 @@ header .Tete .teteContainer{
     justify-content: space-between;
 }
 
+header .headTete{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+/* header .Tete{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+} */
+
 .teteContainer .coordonnees{
     display: flex;
 }
@@ -38,13 +50,16 @@ header .detailBack{
     background: #17475957;
 }
 
-header .TeteDetails{
-    background: url(../../public/images/accueil/image1.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
+
 
 /* TeteDescript */
+
+.TeteDescript{
+    /* position: fixed;
+    width: 100%;
+    z-index: 1; */
+    background-color: #123d78b1;
+}
 
 .TeteDescript nav{
     display: flex;
@@ -96,6 +111,11 @@ nav .nav-left h1{
     font-size: 25px;
 }
 
+nav .nav-left a{
+    text-decoration: none;
+    color: white;
+}
+
 nav .nav-left i{
     font-size: 25px;
     margin-right: 5px;
@@ -109,10 +129,81 @@ nav .nav-left i{
     border: none;
 }
 
+.navRight .boutonTog{
+    display: none;
+}
+
+.navRight .dropMenu{
+    display: none;
+    position: absolute;
+    right: 10%;
+    top: 100px;
+    width: 80%;
+    height: 0;
+    background-color: #0d3746f3;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.navRight .dropMenu.open {
+    height: 340px;
+}
+
+.navRight .dropMenu li {
+    list-style-type: none;
+    margin: 20px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navRight .dropMenu li select{
+    border: none;
+    background: none;
+    color: white;
+}
+
+.navRight .dropMenu span{
+    margin-left: 150px;
+    border: 1px solid;
+}
+
+.navRight .dropMenu .boutonNav{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.navRight .dropMenu button{
+    background-color: white;
+    color: var(--bleuFonce);
+}
+
+.navRight .dropMenu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+.navRight .dropMenu li:hover {
+    text-decoration: underline 3px var(--vert);
+}
+
+.navRight .dropMenu li .active {
+    text-decoration: underline 3px var(--vert);
+}
+
 /*  TeteTile */
 .TeteTitle{
     padding-top: 10%;
     padding-bottom: 10%;
+    background: url(../../public/images/accueil/image1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 250px;
 }
 
 .TeteTitle .titleContainer{
@@ -512,7 +603,6 @@ main .section3{
 }
 
 .section5{
-    border: 1px solid red;
     padding: 4% 10%;
 }
 
@@ -542,8 +632,13 @@ main .section3{
     background-color: #eef9ff;
 }
 
+
 .sectCard5Cont .img img{
     width: 100%;
+}
+
+.sectCard5Cont .img img:hover{
+    transform: scale(1.1);
 }
 
 .sectCard5Cont .img img:hover{
@@ -740,22 +835,35 @@ footer .footerContainer{
     color: white;
 }
 
-.copyR{
+.copyR {
     background-color: var(--bleuFonce);
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
+    overflow: hidden;
 }
 
-.copyR p{
-    padding: 30px;
-    margin-bottom: 0;
+.copyR p {
+    margin: 30px;
     color: white;
     padding-left: 30%;
+    text-align: center;
 }
 
 
 @media (max-width: 900px) {
+
+    .navRight .boutonTog{
+        display: block;
+        z-index: 1;
+        color: white;
+    }
+
+    .navRight .dropMenu{
+        display: block;
+        z-index: 1;
+    }
+
     .section1Cont .cardSection1 {
         display: grid;
         grid-template-columns: 1fr;
@@ -808,10 +916,7 @@ footer .footerContainer{
     }
 
     header .Tete .teteContainer {
-        border: 1px solid black;
-        display: block;
-        background-color: var(--bleuFonce);
-        padding: 10px 20px;
+        display: none;
     }
 
     .teteContainer .coordonnees {
@@ -832,6 +937,10 @@ footer .footerContainer{
         display: none;
     }
 
+    .TeteTitle{
+        padding-top: 100px;
+    }
+
     .TeteTitle .titleContainer {
         width: 90%;
         margin: 0 auto;
@@ -839,7 +948,7 @@ footer .footerContainer{
     }
 
     .titleContainer p {
-        font-size: 30px;
+        font-size: 18px;
         font-weight: bold;
         margin-bottom: 4%;
         color: white;
@@ -862,7 +971,7 @@ footer .footerContainer{
 
     .cardTete .cardContainer {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 20px;
         padding-top: 2%;
     }
@@ -878,6 +987,49 @@ footer .footerContainer{
         margin: 0 auto;
         display: flex;
         justify-content: center;
+    }
+
+    .sectCard5Cont .Item {
+        position: relative;
+        top: -20px;
+        text-align: center;
+        width: 40%;
+    }
+
+    /* footer */
+
+    footer{
+        padding-top: 30px;
+    }
+    .footerContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerContainer .contentLeft{
+        width: 94%;
+        margin-bottom: 20px;
+    }
+
+    .footerContainer .contentRight{
+        width: 94%;
+        display: block;
+        padding-bottom: 0px;
+        margin-bottom: 20px;
+    }
+
+    footer .copyR{
+        position: relative;
+        overflow: hidden;
+    }
+
+    footer .copyR p{
+        padding-left: 0;
+        text-align: center;
+    }
+
+    footer .top-section{
+        margin-bottom: 20px;
     }
 }
 
