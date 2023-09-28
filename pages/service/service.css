@@ -1,5 +1,7 @@
 :root {
     --color-top-1: #091E3E;
+    --base-color: #0599D7;
+    --transparency: rgba(27, 47, 69, 0.7);
 }
 body {
     padding: 0;
@@ -22,10 +24,13 @@ ul {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 4;
     width: 100%;
     box-sizing: border-box;
 }
 #header .nav-infos {
+    position: relative;
+    z-index: 4;
     border: 1px solid black;
     display: flex;
     justify-content: space-between;
@@ -60,9 +65,25 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -35px;
+    margin-top: -30px;
     padding: 12px 4%;
+    position: relative;
 }
+.navbar a {
+    font-weight: 700;
+}
+.navbar a:hover {
+    animation: 100ms ease 0s infinite alternate forwards running animer-moi;
+    color: #091E3E;
+}
+/* @keyframes animer-moi {
+    from {
+        color: white;
+    }
+    to {
+        color: black;
+    }
+} */
 .logo {
     display: flex;
     align-items: center;
@@ -70,21 +91,40 @@ ul {
     color: white;
     font-size: 28px;
 }
-.menu ul {
-    display: flex;
-    gap: 20px;
-}
 
-
-.banner {
-    /* background-image: url(images/slide-3.png); */
-    background-color: black;
-    height: 500px;
+.burger {
     display: flex;
     align-items: center;
 }
-.banner-content {
-    width: 100%;
+.burger #myNav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.openBtn, .closeBtn {
+    display: none;
+    cursor: pointer;
+}
+
+.banner {
+    position: relative;
+    background-image: url(images/image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    background-color: var(--transparency);
+    inset: 0;
+}
+.banner-content { 
+    position: relative;
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,11 +135,10 @@ ul {
     margin: 0 6px;
 }
 
+/* ***************************************************
+                    Section Services
+**************************************************** */
 
-
-
-
-/* ***************************************** */
 #service {
     width: 60%;
     margin: 0 auto;
@@ -162,7 +201,9 @@ ul {
     margin-top: -20px;
 }
 
-/* ************************************ */
+/* ****************************************************
+                Section Testimoniale
+***************************************************** */
 
 #festimoniale {
     width: 60%;
@@ -217,15 +258,9 @@ ul {
     transform: scale(1.1);
 }
 
-
-
-
-
-
-
-
-
-/* ************************************* */
+/* ******************************************************
+                    Section marque
+****************************************************** */
 
 #marque {
     display: flex;
@@ -233,35 +268,40 @@ ul {
     justify-content: center;
     gap: 40px;
     width: 60%;
-    margin: 150px auto;
+    margin: 100px auto;
 }
 .marque-items {
     width: 100px;
+    cursor: pointer;
+    transition: 2s ease 0s;
+}
+.marque-items:hover {
+    transform: scale(1.4);
+    transition: 2s ease 0s;
 }
 .marque-items img{
-    width: 100%;
+    width: 100px;
 }
 
-
-
-
-/* ************************************ */
+/* *******************************************************
+                Section footer
+******************************************************** */
 
 #footer {
     background-color: #091E3E;
-    height: 460px;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: auto auto;
+    overflow: hidden;
 }
 #footer .footer-top {
     position: relative;
     z-index: 2;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 2fr 2fr 2fr 2fr;
     gap: 30px;
     justify-content: center;
     color: white;
     margin: 0 6%;
-    height: 460px;
     box-sizing: border-box;
 }
 .logo-bot h3 {
@@ -269,6 +309,8 @@ ul {
 }
 .tiret {
     width: 100px;
+    margin-top: -6px;
+    margin-bottom: 10px;
     border-top: 4px solid #06A3DA;
 }
 .logo-bot div{
@@ -284,6 +326,9 @@ ul {
 .top-section {
     padding: 30px;
     text-align: justify;
+}
+.top-section h3 {
+    min-width: 120px;
 }
 .top-section:first-child {
     background-color: #06A3DA;
@@ -322,10 +367,12 @@ ul {
     display: flex;
     gap: 10px;
     padding-left: 0;
+    min-width: 140px;
 }
 .media-bot div {
     height: 30px;
     width: 30px;
+    margin-top: 10px;
     border-radius: 2px;
     background-color: #06A3DA;
     display: flex;
@@ -333,11 +380,11 @@ ul {
     place-content: center;
 }
 .footer-bot {
-    height: 50px;
     background-color: black;
-    position: relative;
-    top: -70px;
-    z-index: 1;
     height: 70px;
     box-sizing: border-box;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
