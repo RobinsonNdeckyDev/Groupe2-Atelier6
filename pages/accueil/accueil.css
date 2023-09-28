@@ -1009,6 +1009,7 @@ footer .footerContainer{
     .footerContainer .contentLeft{
         width: 94%;
         margin-bottom: 20px;
+        /* z-index: -1; */
     }
 
     .footerContainer .contentRight{
