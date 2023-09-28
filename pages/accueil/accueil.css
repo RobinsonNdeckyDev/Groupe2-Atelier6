@@ -835,18 +835,19 @@ footer .footerContainer{
     color: white;
 }
 
-.copyR{
+.copyR {
     background-color: var(--bleuFonce);
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
+    overflow: hidden;
 }
 
-.copyR p{
-    padding: 30px;
-    margin-bottom: 0;
+.copyR p {
+    margin: 30px;
     color: white;
     padding-left: 30%;
+    text-align: center;
 }
 
 
