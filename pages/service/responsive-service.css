@@ -1,0 +1,301 @@
+@media screen and (max-width: 575px){
+    /* ---------------------------------------
+    #Header
+    ------------------------------------------ */
+    #header .nav-infos {
+        position: relative;
+        z-index: 4;
+        border: 1px solid black;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 0;
+        padding: 0 6%;
+        height: 30px;
+        box-sizing: border-box;     
+        background-color: var(--color-top-1);
+        overflow: hidden;
+    }
+    #header .infos-right {
+        display: none;
+    }
+    .navbar {
+        overflow: hidden;
+    }
+    .burger {
+        position: fixed;
+        z-index: 10;
+        height: 100vh;
+        top: 0px;
+        left: -100%;
+        padding: 12px 12px;
+        width: 100%;
+        align-items: start;
+        transition: left 300ms ease-in-out;
+        justify-content: space-between;
+        background-color: var(--color-top-1);
+        box-sizing: border-box;
+    }
+    .burger ul {
+        flex-direction: column;
+        margin-left: 18%;
+        margin-top: 40px;
+        font-size: 1.4em;
+    }
+    .closeBtn {
+        display: contents;
+    }
+    .openBtn i {
+        color: white;
+        font-size: 30px;
+    }
+    .openBtn {
+        display: block;
+    }
+    .infos-left{
+        display: flex;
+        gap: 10px;
+        font-size: 0.4em;
+    }
+    .banner-content {
+        z-index: 6;
+    }
+    /* ----------------------------------------------
+    #Services
+    -----------------------------------------------*/
+    #service {
+        width: 96%;
+    }
+    .services-box {
+        grid-template-columns: 1fr;
+    }
+
+    /* ----------------------------------------------
+    #Festimoniale
+    ------------------------------------------------*/
+    #festimoniale {
+        width: 96%;
+        margin: 70px auto;
+        text-align: center;
+    }
+    .festi-box {
+        grid-template-columns: repeat(3, 1fr);
+        overflow: hidden;
+        animation: 10s linear 0s infinite alternate forwards running slide-festi;
+    }
+    @keyframes slide-festi {
+        from {
+            margin-left: 0%;
+        }
+        20% {
+            margin-left: -10%;
+        }
+        40% {
+            margin-left: -10%;
+        }
+        60% {
+            margin-left: 0%;
+        }
+        to {
+            margin-left: 0%;
+        }
+    }
+    /* -----------------------------------------------
+    #Marque
+    -------------------------------------------------*/
+    #marque {
+        width: 60%;
+        overflow: hidden;
+    }
+
+    .marque-items {
+        width: 100px;
+        cursor: pointer;
+        transition: 2s ease 0s;
+    }
+    .marque-items:hover {
+        transform: scale(1.4);
+        transition: 2s ease 0s;
+    }
+
+    .marque-items img {
+        width: 100px;
+    }
+    /* --------------------------------------------------
+    #Fooster
+    ----------------------------------------------------*/
+    #footer {
+        background-color: #091E3E;
+        display: grid;
+        grid-template-rows: auto auto;
+        box-sizing: border-box;
+    }
+    #footer .footer-top {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 991px) {
+
+    /* -----------------------------------------
+    #Header
+    ------------------------------------------ */
+    #header .nav-infos {
+        position: relative;
+        z-index: 4;
+        border: 1px solid black;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 0;
+        padding: 0 6%;
+        height: 30px;
+        box-sizing: border-box;
+        background-color: var(--color-top-1);
+        overflow: hidden;
+    }
+    #header .infos-right {
+        display: none;
+    }
+    .navbar {
+        overflow: hidden;
+    }
+
+    .burger {
+        position: fixed;
+        z-index: 10;
+        height: 60vh;
+        top: 0px;
+        left: -100%;
+        padding: 12px 12px;
+        width: 100%;
+        align-items: start;
+        transition: left 300ms ease-in-out;
+        justify-content: space-between;
+        background-color: var(--color-top-1);
+        box-sizing: border-box;
+    }
+
+    .burger ul {
+        flex-direction: column;
+        margin-left: 30%;
+        font-size: 1.4em;
+    }
+    .burger li:nth-child(7) {
+        position: absolute;
+        left: 0;
+        margin-left: 12px;
+    }
+    .closeBtn {
+        display: contents;
+    }
+
+    .openBtn i {
+        color: white;
+        font-size: 30px;
+    }
+
+    .openBtn {
+        display: block;
+    }
+
+    .infos-left {
+        display: flex;
+        gap: 20px;
+        font-size: 0.9em;
+    }
+
+    .banner-content {
+        z-index: 6;
+    }
+
+    /* ----------------------------------------------
+    #Services
+    -----------------------------------------------*/
+    #service {
+        width: 96%;
+    }
+
+    .services-box {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* ----------------------------------------------
+    #Festimoniale
+    ------------------------------------------------*/
+    #festimoniale {
+        width: 96%;
+        margin: 70px auto;
+        text-align: center;
+    }
+
+    .festi-box {
+        grid-template-columns: repeat(3, 1fr);
+        overflow: hidden;
+        animation: 10s linear 0s infinite alternate forwards running slide-festi;
+    }
+
+    @keyframes slide-festi {
+        from {
+            margin-left: 0%;
+        }
+
+        20% {
+            margin-left: -10%;
+        }
+
+        40% {
+            margin-left: -10%;
+        }
+
+        60% {
+            margin-left: 0%;
+        }
+
+        to {
+            margin-left: 0%;
+        }
+    }
+
+    /* -----------------------------------------------
+    #Marque
+    -------------------------------------------------*/
+    #marque {
+        width: 60%;
+        overflow: hidden;
+    }
+
+    .marque-items {
+        width: 100px;
+        cursor: pointer;
+        transition: 2s ease 0s;
+    }
+
+    .marque-items:hover {
+        transform: scale(1.4);
+        transition: 2s ease 0s;
+    }
+
+    .marque-items img {
+        width: 100px;
+    }
+
+    /* --------------------------------------------------
+    #Fooster
+    ----------------------------------------------------*/
+    #footer {
+        background-color: #091E3E;
+        display: grid;
+        grid-template-rows: auto auto;
+        box-sizing: border-box;
+    }
+
+    #footer .footer-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+}
