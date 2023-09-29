@@ -61,15 +61,26 @@
                                 <div class="menu">
                                     <ul>
                                         <li><a href="../accueil/accueil.html">Home</a></li>
-                                        <li><a href="../service/secvice.html">Services</a></li>
-                                        <li><a href="../blogGrid/blogGrid.html">Blog<select name="" id=""></select></a></li>
-                                        <li><a href="#">Pages<select name="" id=""></select></a></li>
+                                        <li><a href="../about/about.html">About</a></li>
+                                        <li><a href="../service/service.html">Services</a></li>
+                                        <li><a href="#Blog">Blog <i class="fa-solid fa-caret-down" style="color: #ffffff;"></i></a>
+                                            <ul class="drop">
+                                                <li><a href="../blogGrid/blogGrid.html">Blog Grid</a></li>
+                                                <li><a href="../blogGrid/blogGrid.html">Blog Detail</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Pages <i class="fa-solid fa-caret-down" style="color: #ffffff;"></i></a>
+                                            <ul class="drop">
+                                                <li><a href="../pricing/pricing.html">Price</a></li>
+                                                <li><a href="../team/team.html">Team Members</a></li>
+                                                <li><a href="../team/team.html">Testimonial</a></li>
+                                            </ul>
+                                        </li>
                                         <li><a href="../contact/contact.html">Contact</a></li>
-                                        <li></li>
                                     </ul>
-                                    <span><i class="fa-solid fa-magnifying-glass search" style="color: #ffffff;"></i></span>
+                                    <span class="search"><a href="#"><i class="fa-solid fa-magnifying-glass search" style="color: #ffffff;"></i></a></span>
                                     <div class="boutonNav">
-                                        <button>Download Pro Version</button>
+                                        <button><a href="../accueil/accueil.html">Download Pro Version</a></button>
                                     </div>
                                 </div>
         
@@ -78,14 +89,27 @@
                                 </div>
         
                                 <div class="dropMenu">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Blog<select name="" id=""></select></a></li>
-                                    <li><a href="#">Pages<select name="" id=""></select></a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li></li>
+                                    <li><a href="../accueil/accueil.html">Home</a></li>
+                                    <li><a href="../about/about.html">About</a></li>
+                                    <li><a href="../service/service.html">Services</a></li>
+                                    <li><a href="#Blog">Blog <i class="fa-solid fa-caret-down" style="color: #ffffff;"></i></a>
+                                        <ul class="drop">
+                                            <li><a href="../blogGrid/blogGrid.html">Blog Grid</a></li>
+                                            <li><a href="../blogGrid/blogGrid.html">Blog Detail</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Pages <i class="fa-solid fa-caret-down" style="color: #ffffff;"></i></a>
+                                        <ul class="drop">
+                                            <li><a href="../pricing/pricing.html">Price</a></li>
+                                            <li><a href="../team/team.html">Team Members</a></li>
+                                            <li><a href="../team/team.html">Testimonial</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../contact/contact.html">Contact</a></li>
                                     </ul>
-                                    <span><i class="fa-solid fa-magnifying-glass search" style="color: #ffffff;"></i></span>
+                                    <div class="navSearch">
+                                    <span><a href="#"><i class="fa-solid fa-magnifying-glass search"style="color: #ffffff;"></i></a></span>
+                                    </div>
                                     <div class="boutonNav">
                                         <button>Download Pro Version</button>
                                     </div>
@@ -125,7 +149,7 @@
                         <span><i class="fa-solid fa-check" style="color: #fff;"></i></span>
                     </div>
                     <div class="cardText">
-                        <p>Happy client <br> 12345</p>
+                        <p><span class="CT">Projects Done</span> <br> <span class="CTNum">12345</span></p>
                     </div>
                 </div>
                 <div class="card blue">
@@ -133,12 +157,16 @@
                         <span><i class="fa-solid fa-award" style="color: #06a3da;"></i></span>
                     </div>
                     <div class="cardTex">
-                        <p>Happy client <br> 12345</p>
+                        <p>Win Awards<br> 12345</p>
                     </div>
                 </div>
             </div>
         </section>
     </header>
+
+    <!-- <div class="scrollBtn">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+    </div> -->
 
     <!-- main -->
     <main>
@@ -158,7 +186,7 @@
                     </div>
                     <div class="SectiCard">
                         <div class="sectCardIcon">
-                            <span><i class="fa-solid fa-shield-halved" style="color: #ffffff;"></i></span>
+                            <span><i class="fa-solid fa-chart-pie" style="color: #ffffff;"></i></span>
                         </div>
                         <h3>Data analytics</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -166,7 +194,7 @@
                     </div>
                     <div class="SectiCard">
                         <div class="sectCardIcon">
-                            <span><i class="fa-solid fa-shield-halved" style="color: #ffffff;"></i></span>
+                            <span><i class="fa-solid fa-code" style="color: #ffffff;"></i></span>
                         </div>
                         <h3>Web Developpement</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -174,7 +202,7 @@
                     </div>
                     <div class="SectiCard">
                         <div class="sectCardIcon">
-                            <span><i class="fa-solid fa-shield-halved" style="color: #ffffff;"></i></span>
+                            <span><i class="fa-brands fa-android" style="color: #ffffff;"></i></span>
                         </div>
                         <h3>Apps Developpement</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -182,7 +210,7 @@
                     </div>
                     <div class="SectiCard">
                         <div class="sectCardIcon">
-                            <span><i class="fa-solid fa-shield-halved" style="color: #ffffff;"></i></span>
+                            <span><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></span>
                         </div>
                         <h3>Seo Optimisation</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -283,11 +311,11 @@
                             </div>
                             <div class="detail">
                                 <span class="text">Responsive Layout</span>
-                                <span class="icon"><i class="fa-solid fa-xmark"></i></span>
+                                <span class="icon"><i class="fa-solid fa-check"></i></span>
                             </div>
                             <div class="detail">
                                 <span class="text">Cross-Browser support</span>
-                                <span class="icon"><i class="fa-solid fa-xmark"></i></span>
+                                <span class="icon"><i class="fa-solid fa-check"></i></span>
                             </div>
                         </div>
                         <div class="cardSect2btn">
@@ -370,7 +398,7 @@
         </section>
 
         <!-- Section 4 -->
-        <section class="section4">
+        <section class="section4" id="Team">
             <div class="section4Cont">
                 <p class="sect4T">team members</p>
                 <h2>Professionnal Staff Ready to <br> Help Business</h2>
@@ -418,7 +446,7 @@
         </section>
 
         <!-- Section 5 -->
-        <section class="section5">
+        <section class="section5" id="Blog">
             <div class="section5Cont">
                 <p class="sect5T">latest blog</p>
                 <h2>Read The Latest Articles from <br> Our Blog Post</h2>
@@ -527,12 +555,12 @@
                     <h3>Quick Links</h3>
                     <div class="tiret"></div>
                     <ul class="infos-bot">
-                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">Home</a></li>
-                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">About Us</a></li>
-                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">Our Services</a></li>
-                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">Meet The Team</a></li>
-                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">Latest Blog</a></li>
-                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">Contact Us</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="../accueil/accueil.html">Home</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="../about/about.html">About Us</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="../service/service.html">Our Services</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="#Team">Meet The Team</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="#Blog">Latest Blog</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="../contact/contact.html">Contact Us</a></li>
                     </ul>
                 </div>
 
@@ -540,12 +568,12 @@
                     <h3>Popular Links</h3>
                     <div class="tiret"></div>
                     <ul class="infos-bot">
-                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">Home</a></li>
-                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">About Us</a></li>
-                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">Our Services</a></li>
-                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">Meet The Team</a></li>
-                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">Latest Blog</a></li>
-                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">Contact Us</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="../accueil/accueil.html">Home</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="../about/about.html">About Us</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="../service/service.html">Our Services</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="#Team">Meet The Team</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="#Blog">Latest Blog</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="../contact/contact.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
