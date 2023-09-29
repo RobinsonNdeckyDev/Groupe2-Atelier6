@@ -322,10 +322,7 @@
     background-color: var(--bleuFonce1);
     border: none;
 }
-.quote .quoteright form button:hover{
-    background-color: white;
-    color: var(--bleuFonce1);
-}
+
 
 /* media queries pour quote */
 /* small device */
