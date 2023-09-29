@@ -11,6 +11,7 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
 .topbar{
@@ -257,12 +258,13 @@
     color: var(--grisClair1);
     padding-top: 2%;
 }
-.quote .bottomquote{
+.quote .bottomquote a{
     /* border: 1px solid blue; */
     height: 33%;
     display: flex;
     font-size: 14px;
     margin-top: 2%;
+    color: black;
 }
 .quote .bottomquote i{
     background-color: var(--bleuClair);
@@ -320,6 +322,11 @@
     background-color: var(--bleuFonce1);
     border: none;
 }
+.quote .quoteright form button:hover{
+    background-color: white;
+    color: var(--bleuFonce1);
+}
+
 /* media queries pour quote */
 /* small device */
 @media  (max-width: 768px){
