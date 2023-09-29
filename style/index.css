@@ -14,6 +14,10 @@
     --grisClair1: #828f9e;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: verdana;
 }
