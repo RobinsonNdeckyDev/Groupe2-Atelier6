@@ -9,3 +9,13 @@ boutonTog.onclick = function () {
 
     boutonTogI.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
 };
+
+
+const btn=document.querySelector('.scrollBtn');
+btn.addEventListener('click',() => {
+    window.scrollTo({
+        top:0,
+        left:0,
+        behavior: "smooth"
+    })
+})
