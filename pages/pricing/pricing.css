@@ -52,6 +52,7 @@
     color: white;
     font-size: 20px;
 }
+/* pricing */
 .prices{
     /* border: 1px solid black; */
     width: 70%;
@@ -101,6 +102,10 @@
     height: 100%;
     background-color: var(--bleuClair2);
     text-align: start;
+    transition: transform 0.3s ease;
+}
+.bottomprices .bottompricesitem:hover{
+    transform: scale(1.2);
 }
 .bottomprices .bottompricesitem .titleitem{
     color: var(--bleuClair);
@@ -150,12 +155,45 @@
     color: white;
     
 }
+.bottompricesitem button:hover{
+    background-color: white;
+
+}
+.bottompricesitem button a:hover{
+    color: var(--bleuClair);
+}
 #middleitem{
     width: 34%;
     background-color: white;
     box-shadow: 0.1px 0.1px 2px black;
     z-index: 2;
 }
+/* media queries pour prices */
+/* small device */
+@media (max-width: 768px){
+   
+  .prices{
+      margin-bottom: 100%;
+
+  }
+ .bottomprices{
+    display: block;
+    margin-bottom: 45%;
+}  
+.bottomprices .bottompricesitem{
+    margin: 15% 1.3%;
+    width: 98%;
+    
+}
+.bottomprices:last-child{
+    margin-bottom: 398px;
+}
+#middleitem{
+    width: 98%;
+
+}
+}
+/* requestAquote */
 .quote{
     /* border: 1px solid black; */
     width: 70%;
@@ -242,43 +280,119 @@
     background-color: var(--bleuClair);
     /* border: 1px solid blue; */
 }
-form{
+.quote .quoteright form{
     /* border: 1px solid red; */
     height: 90%;
     margin: 5%;
     
 }
-form input{
+.quote .quoteright form input{
     width: 99%;
     height: 10%;
     margin-bottom: 5%;
 }
-form select{
+.quote .quoteright form select{
     width: 100%;
     height: 10%;
     margin-bottom: 5%;
 }
-form input::placeholder{
+.quote .quoteright form input::placeholder{
     padding-left: 2%;
 }
-form select{
+.quote .quoteright form select{
     color: var(--grisClair1);
     padding-left: 2%
 }
-form textarea{
+.quote .quoteright form textarea{
     width: 100%;
     height: 40%;
 }
-textarea::placeholder{
+.quote .quoteright textarea::placeholder{
     color: var(--grisClair1);
     padding: 2% ;
     padding-left: 3%;
 }
-form button{
+.quote .quoteright form button{
     width: 100%;
     height: 10%;
     margin-top: 3%;
     color: white;
     background-color: var(--bleuFonce1);
     border: none;
+}
+/* media queries pour quote */
+/* small device */
+@media  (max-width: 768px){
+    .quote{
+        margin-top: 90%;
+        display: block;
+        justify-content: space-between;
+    }
+   .quoteleft{
+    margin-top: 90%;
+    }
+   .topquote h4{
+    margin-top: 350%;
+   }
+   .quoteright{
+       margin-top: 10%;
+       height: 60%;
+       padding-top: 2%;
+
+   }
+   .topquote{
+    margin-top: 90%;
+   }
+}
+/* section Logos */
+
+.logos {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    padding: 4% 10%;
+}
+
+.logoContainer {
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+    padding: 1%;
+}
+
+.logoContainer .slideLogo {
+	-webkit-animation: scroll 30s linear infinite;
+	animation: scroll 30s linear infinite;
+	display: flex;
+	width: calc(150px * 14);
+}
+
+.logoContainer .slide {
+	width: 150px;
+    height: 60px;
+    margin-left: 20px;
+}
+
+.logoContainer .slide img {
+    width: 100%;
+    height: 100%;
+	border-radius: 10px;
+}
+
+@-webkit-keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc(-150px * 7));
+	}
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc(-150px * 7));
+	}
 }
