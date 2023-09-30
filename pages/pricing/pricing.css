@@ -89,11 +89,22 @@ header .headTete {
     color: white;
 }
 
-.icones span {
+.icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones .sociaux {
     margin-left: 15px;
     padding: 6px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
     border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icones span a {
@@ -282,6 +293,16 @@ nav .nav-left i {
 
 .navRight .menu .drop li a:hover {
     border-bottom: 4px solid var(--bleuClair);
+}
+
+.TeteDetails nav .activeLink {
+    text-decoration: underline 3px solid var(--bleuClair);
+    text-underline-offset: 2rem;
+}
+
+.navRight ul .hovLink:hover {
+    text-decoration: underline 3px solid var(--bleuClair);
+    text-underline-offset: 2rem;
 }
 
 /*  TeteTile */
