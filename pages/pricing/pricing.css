@@ -642,17 +642,22 @@ nav .nav-left i {
     margin-top: 90%;
     }
    .topquote h4{
-    margin-top: 350%;
+    margin-top: 270%;
    }
    .quoteright{
        margin-top: 10%;
-       height: 60%;
+       height: 80%;
        padding-top: 2%;
 
    }
    .topquote{
     margin-top: 90%;
    }
+ .logos{
+    margin-top: 30%;
+ }
+
+   
 }
 /* section Logos */
 
