@@ -296,7 +296,217 @@ nav .nav-left i {
 }
 
 /* header */
+/* main */
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+main .about{
+    width: 70%;
+    height: 54vh;
+    /* border: 1px solid #ccc; */
+    margin: 8% auto;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+}
+main .about .aboutus{
+    width: 100%;
+    height: 100%;
+    
+}
+main .about .aboutus h5{
+    color: var(--bleuClair);
+}
+main .about .aboutus .titledesc{
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.soulignement3{
+    width: 10%;
+    height: 5px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 3%;
+    margin: 2% 0;
+    
+    
+}
+.aboutus .aboutusunderline1{
+    
+    width: 8px; 
+    height: 3px;
+    background-color: var(--bleuClair);
+    
+}
+.aboutus .aboutusunderline2{
+    width: 75px; 
+    height: 3px;
+    background-color: var(--bleuClair);
+}
+main .about .aboutus .lor{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.29);
+    padding-right: 5%;
+    margin-top: 4%;
+    /* border: 1px solid #000; */
+    margin-bottom: 2%;
+}
+main .about .aboutus .liste{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 1.6em;
+    font-size: 12px;
+    color: #000000b1;
+}
+main .about .aboutus .bottomquote a{
+    /* border: 1px solid blue; */
+    height: 33%;
+    display: flex;
+    font-size: 14px;
+    margin-top: 2%;
+    color: #000000b1;
+}
+ .bottomquote  i{
+    background-color: var(--bleuClair);
+    width: 8%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottomquote span{
+    color: var(--bleuClair);
+    font-size: 15px;
+}
+main button{
+    width: 28%;
+    height: 10%;
+    margin-top: 3%;
+    color: white;
+    background-color: var(--bleuClair);
+    border: none;
+}
+main .about .image img{
+    width: 100%;
+    height: 100%;
+}
+/* team */
+.team{
+    width: 70%;
+    margin: 2% auto;
+}
+.teamcontainer .sect4T {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: var(--bleuClair);
+    font-weight: bold;
+    margin-bottom: 1%;
+    text-align: center;
+}
 
+.teamcontainer h2 {
+    text-align: center;
+    font-size: 28px;
+    color: var(--bleuFonce);
+    margin-bottom: 4%;
+}
+
+.teamcontainer .sectCards4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.sectCards4 .sectCard4Cont {
+    position: relative;
+    background-color: #eef9ff;
+}
+
+.sectCard4Cont .img img {
+    width: 100%;
+}
+
+.sectCard4Cont .img img:hover{
+    transform: scale(1.2);
+   
+}
+
+
+.sectCard4Body .client4 p {
+    text-align: center;
+}
+
+.client4 .nom {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--bleuClair);
+}
+
+.client4 .proff {
+    color: #b4adaf;
+}
+
+.sect4Hov {
+    height: 10px;
+    background-color: chocolate;
+}
+
+/* section Logos */
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4% 10%;
+}
+
+.logoContainer {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    padding: 1%;
+}
+
+.logoContainer .slideLogo {
+    -webkit-animation: scroll 30s linear infinite;
+    animation: scroll 30s linear infinite;
+    display: flex;
+    width: calc(150px * 14);
+}
+
+.logoContainer .slide {
+    width: 150px;
+    height: 60px;
+    margin-left: 20px;
+}
+
+.logoContainer .slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-150px * 7));
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-150px * 7));
+    }
+}
 
 
 /* Footer */
@@ -542,7 +752,9 @@ footer .footerContainer {
 
     /* header */
 
+    /* main */
 
+    /* main */
     /* footer */
 
     footer {
