@@ -1,0 +1,1158 @@
+/* Header */
+/* header .Tete{
+    padding: 1%;
+} */
+
+header .Tete .teteContainer{
+    border: 1px solid black;
+    display: flex;
+    background-color: var(--bleuFonce);
+    padding: 15px 20px;
+    justify-content: space-between;
+}
+
+header .headTete{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.teteContainer .coordonnees{
+    display: flex;
+}
+
+.teteContainer .coordonnees .coods{
+    display: flex;
+    margin-right: 10px;
+}
+
+.coods .icon{
+    margin-right: 5px;
+}
+
+.coods p{
+    color: white;
+}
+
+.icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones .sociaux{
+    margin-left: 15px;
+    padding: 6px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones span a{
+    text-decoration: none;
+    color: white;
+}
+
+header .detailBack{
+    background: #17475957;
+}
+
+
+
+/* TeteDescript */
+
+.TeteDescript{
+    background-color: #123d78b1;
+}
+
+.TeteDescript nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px;
+    border-bottom: 2px solid rgba(190, 186, 186, 0.627);
+}
+
+nav .navRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navRight .menu{
+    display: flex;
+}
+
+.navRight .menu ul{
+    display: flex;
+    padding-top: 10px;
+}
+
+.navRight ul li{
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+.navRight ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.navRight .search{
+    margin-left: 10px;
+}
+
+.navRight .menu span{
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+nav .nav-left h1{
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+}
+
+nav .nav-left a{
+    text-decoration: none;
+    color: white;
+}
+
+nav .nav-left i{
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.navRight .boutonNav button{
+    background: var(--bleuClair);
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+}
+
+.navRight .boutonNav button a{
+    text-decoration: none;
+    color: white;
+}
+
+.navRight .boutonTog{
+    display: none;
+}
+
+.navRight .dropMenu{
+    display: none;
+    position: absolute;
+    right: 10%;
+    top: 100px;
+    width: 80%;
+    height: 0;
+    background-color: #0d3746f3;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.navRight .dropMenu.open {
+    height: 440px;
+}
+
+.navRight .dropMenu li {
+    list-style-type: none;
+    margin: 20px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navRight .dropMenu .drop{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.navRight .dropMenu .drop li{
+    padding-bottom: 1%;
+    margin: 0;
+    display: none;
+    font-size: 12px;
+    font-weight: thin;
+}
+
+
+.navRight .dropMenu ul li:hover .drop li {
+    display: block;
+    color: var(--bleuFonce);
+}
+
+.navRight .dropMenu .drop li a:hover {
+    border-bottom: 4px solid var(--bleuClair);
+    color: var(--bleuFonce);
+}
+
+
+.navRight .dropMenu .navSearch{
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
+
+.navRight .dropMenu .boutonNav{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.navRight .dropMenu button{
+    background-color: white;
+    color: var(--bleuFonce);
+}
+
+.navRight .dropMenu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+
+.navRight .dropMenu li:hover {
+    text-decoration: underline 3px var(--vert);
+}
+
+.navRight .dropMenu li .active {
+    text-decoration: underline 3px var(--vert);
+}
+
+.navRight .drop{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(44, 44, 184, 0.637);
+}
+
+.navRight .drop li{
+    padding-bottom: 1%;
+    margin: 0;
+    display: none;
+    font-size: 12px;
+    font-weight: thin;
+    margin: 5px;
+}
+
+.navRight ul li:hover .drop li{
+    display: block;
+    color: var(--bleuFonce);
+}
+
+.navRight .drop li a:hover{
+    border-bottom: 4px solid var(--bleuClair);
+}
+
+.TeteDetails nav .activeLink {
+    text-decoration: underline 3px solid var(--bleuClair);
+    text-underline-offset: 2rem;
+}
+
+.TeteDetails nav .activeLink {
+    text-decoration: underline 3px solid var(--bleuClair);
+    text-underline-offset: 2rem;
+}
+
+.navRight ul .hovLink:hover {
+    text-decoration: underline 3px solid var(--bleuClair);
+    text-underline-offset: 2rem;
+}
+
+/*  TeteTile */
+header .TeteTitle{
+    background: url(../../public/images/accueil/image1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header .headerBack {
+    background-color: #0d2b5665;
+    padding-top: 15%;
+    padding-bottom: 10%;
+}
+
+.TeteTitle .titleContainer{
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titleContainer h5{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4%;
+    color: white;
+}
+
+.titleContainer p{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 4%;
+    color: white;
+}
+
+.titleContainer .titleBtns{
+    width: 35%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleContainer .titleBtns button{
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.titleContainer .titleBtns button:nth-child(1){
+    background-color: var(--bleuClair);
+}
+
+.titleContainer .titleBtns button:nth-child(2){
+    background-color: rgba(255, 255, 255, 0.047);
+}
+
+
+/* Card Tete */
+header .cardTete{
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    bottom: 60px;
+}
+
+.cardTete .cardContainer{
+    display: flex;
+}
+
+.cardContainer .card{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.cardContainer .card .CT{
+    color: var(--bleuClair);
+}
+
+.cardContainer .card .CTNum{
+    color: var(--bleuFonce);
+}
+
+.cardContainer .cardIcon:nth-child(1),.cardIcon:nth-child(3){
+    border: 1px solid white;
+    padding: 20px;
+    background-color: white;
+}
+
+.cardContainer .card .cardMid{
+    background-color: var(--bleuClair);
+}
+
+.cardContainer .card .cardMid p{
+    color: var(--bleuClair);
+}
+
+.cardContainer .card .cardMid p{
+    color: var(--bleuFonce);
+}
+
+.cardContainer .card i:nth-child(1),i:nth-child(3){
+    color: var(--bleuClair);
+    font-size: 18px;
+}
+
+.cardContainer .card p:nth-child(1), .p:nth-child(3){
+    padding-left: 15px;
+    color: white;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.cardContainer .card:nth-child(2){
+    background-color: #eef9ff;
+}
+
+.cardContainer .card:nth-child(1),.card:nth-child(3){
+    background-color: var(--bleuClair);
+}
+
+/* main */
+
+/* .scrollBtn{
+    border: 1px solid red;
+    position: a;
+} */
+
+.scrollBtn i{
+    font-size: 30px;
+}
+
+/* section1 */
+
+main .section1{
+    padding: 4% 10%;
+}
+
+.section1Cont h2{
+    text-align: center;
+    font-size: 30px;
+    color: var(--bleuFonce);
+    margin-bottom: 4%;
+}
+
+.section1Cont .cardSection1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    row-gap: 20px;
+}
+
+.section1Cont .SectiCard{
+    padding: 8% 15%;
+    background-color: #eef9ff;
+}
+
+.SectiCard h3,p{
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.SectiCard .sectCardIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectCardIcon span{
+    margin-bottom: 20px;
+    padding: 4%;
+    transform: rotate(50deg);
+    background-color: var(--bleuClair);
+}
+
+.sectCardIcon i{
+    font-size: 40px;
+    transform: rotate(-50deg);
+}
+
+.cardSection1 .sect{
+    background-color: var(--bleuClair);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardSection1 .sect span{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* section2 */
+main .section2{
+    padding: 4% 10%;
+}
+
+
+.section2Cont h2{
+    text-align: center;
+    font-size: 30px;
+    color: var(--bleuFonce);
+    margin-bottom: 4%;
+}
+
+.section2Cont .sectCard2Cont:nth-child(1),.sectCard2Cont:nth-child(3){
+    background-color: #eef9ff;
+}
+
+.section2Cont .sectCards2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sectCard2Cont .Sc2Head{
+    padding: 20px 25px;
+    margin-bottom: 2%;
+}
+
+.sectCard2Cont .Sc2Head h4{
+    color: var(--bleuClair);
+}
+
+.sectCard2Cont .Sc2Head h6{
+    color: #898c9e;
+    font-size: 12px;
+    margin-top: 1%;
+}
+
+.sectCard2Cont .sectCard2Body{
+    padding: 20px 25px;
+}
+
+.sectCard2Body .price span{
+    font-size: 30px;
+}
+
+.sectCard2Body .price{
+    color: var(--bleuFonce);
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.sectCard2Body .detail{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #9b9798;
+    font-size: 16px;
+}
+
+.detail .fa-check{
+    color: var(--bleuClair);
+    font-size: 18px;
+}
+
+.detail .fa-xmark{
+    color: red;
+    font-size: 18px;
+}
+
+.cardSect2btn{
+    padding: 5px 25px;
+}
+
+.cardSect2btn button{
+    background-color: var(--bleuClair);
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+.section2Cont .card2Cont{
+    box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.227);
+}
+
+/* section3 */
+main .section3{
+    padding: 4% 10%;
+}
+
+.section3 h2{
+    text-align: center;
+    font-size: 30px;
+    color: var(--bleuFonce);
+    margin-bottom: 4%;
+}
+
+.section3 .sectCards3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sectCard3Cont .Sc3Head{
+    display: flex;
+    padding: 4% 10%;
+}
+
+.Sc3Head .img{
+    width: 20%;
+}
+
+.Sc3Head .img img{
+    width: 100%;
+    height: 60px;
+}
+
+.Sc3Head .client{
+    padding-left: 20px;
+    line-height: 30px;
+}
+
+.client p{
+    text-align: left;
+}
+
+.client .nom{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--bleuClair);
+}
+
+.client .proff{
+    color: #b4adaf;
+}
+
+.sectCard3Body .para{
+    text-align: left;
+    padding: 4% 10%;
+}
+
+.para p{
+    text-align: left;
+}
+
+.sectCard3Cont:nth-child(1),.sectCard3Cont:nth-child(3){
+    background-color: #eef9ff;
+}
+
+.sectCard3Cont:nth-child(2){
+    box-shadow: 5px 5px 10px 5px rgba(128, 128, 128, 0.17);
+}
+
+/* main Section 4 */
+
+.section4{
+    padding: 4% 10%;
+}
+
+/* .section4 .section4Cont{
+    border: 1px solid;
+} */
+
+.section4Cont .sect4T{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: var(--bleuClair);
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.section4Cont h2{
+    text-align: center;
+    font-size: 30px;
+    color: var(--bleuFonce);
+    margin-bottom: 4%;
+}
+
+.section4Cont .sectCards4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.sectCards4 .sectCard4Cont{
+    position: relative;
+    background-color: #eef9ff;
+}
+
+.sectCard4Cont .img img{
+    width: 100%;
+    transform: rotate(0deg);
+    transition: scale(0.9) 5s;
+}
+
+.sectCard4Cont .img img:hover{
+    transform: rotate(5deg);
+}
+
+.sectCard4Cont .sectCard4Body{
+    padding: 4% 10%;
+}
+
+.sectCard4Body .client4 p{
+    text-align: center;
+}
+
+.client4 .nom{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--bleuClair);
+}
+
+.client4 .proff{
+    color: #b4adaf;
+}
+
+.sect4Hov{
+    height: 10px;
+    background-color: chocolate;
+    /* bottom: 100px; */
+}
+
+.section5{
+    padding: 4% 10%;
+}
+
+.section5Cont .sect5T {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: var(--bleuClair);
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.section5Cont h2 {
+    text-align: center;
+    font-size: 30px;
+    color: var(--bleuFonce);
+    margin-bottom: 4%;
+}
+
+.section5Cont .sectCards5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.sectCards5 .sectCard5Cont{
+    border: 1px solid;
+    background-color: #eef9ff;
+}
+
+
+.sectCard5Cont .img img{
+    width: 100%;
+}
+
+.sectCard5Cont .img img:hover{
+    transform: scale(1.1);
+}
+
+.sectCard5Cont .img img:hover{
+    transform: scale(0.9);
+    padding: 1%;
+    border-bottom: 5px solid var(--bleuClair);
+}
+
+.sectCard5Cont .Item{
+    position: relative;
+    top: -240px;
+    background: var(--bleuClair);
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding: 5px 15px;
+    color: white;
+}
+
+.sectCard5Cont .detail{
+    padding: 0 10%;
+}
+
+.sectCard5Cont .detail p:nth-child(1){
+    margin-right: 10px;
+}
+
+.sectCard5Cont .detail span{
+    color: var(--bleuClair);
+    margin-right: 5px;
+}
+
+.sectCard5Cont .detail p{
+    text-align: left;
+}
+
+.sectCard5Cont .sectCard5Body{
+    padding: 0 10%;
+}
+
+.sectCard5Body h4{
+    color: var(--bleuFonce);
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.sectCard5Body p{
+    text-align: left;
+}
+
+.sectCard5Body button{
+    background: none;
+    border: none;
+    font-weight: bold;
+    color: var(--bleuClair);
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.sectCard5Body button span{
+    margin-left: 5px;
+}
+
+/* Footer */
+
+footer{
+    background-color: #0d2b56;
+    padding: 0;
+    position: relative;
+}
+
+footer .footerContainer{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+}
+
+.footerContainer .contentLeft{
+    width: 30%;
+    padding: 5% 3%;
+    background-color: var(--bleuClair);
+    z-index: 1;
+}
+
+.contentLeft .top-section .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.top-section .logo i{
+    color: white;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.top-section .logo h3{
+    color: white;
+    font-size: 30px;
+}
+
+.top-section p{
+    text-align: justify;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.top-section input{
+    padding: 4% 3%;
+    border: none;
+}
+
+.top-section button{
+    background-color: var(--bleuFonce);
+    width: 30%;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.top-section .form-bot{
+    display: flex;
+}
+
+.top-section input:nth-child(1){
+    width: 70%;
+    background-color: white;
+}
+
+.top-section input:nth-child(2){
+    width: 24%;
+    background-color: var(--bleuFonce);
+    color: white;
+    font-weight: bold;
+}
+
+.footerContainer .contentRight{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+}
+
+.contentRight h3{
+    color: white;
+    margin-bottom: 5%;
+}
+
+.top-section-sim .infos-bot{
+    margin-bottom: 15px;
+}
+
+.top-section-sim li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.top-section-sim li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.top-section-sim .media-bot{
+    display: flex;
+    margin-top: 10px;
+}
+
+.media-bot .botIcon{
+    margin-right: 10px;
+    padding: 10px 15px;
+    background-color: var(--bleuClair);
+}
+
+.media-bot .botIcon i{
+    color: white;
+}
+
+.media-bot .botIcon i:hover{
+    color: var(--bleuFonce);
+}
+
+.contentRight .top-section-sim-2 .infos-bot li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.contentRight .top-section-sim-2 .infos-bot li i{
+    color: var(--bleuClair);
+    margin-right: 10px;
+}
+
+.contentRight .top-section-sim-2 .infos-bot li a{
+    text-decoration: none;
+    color: white;
+}
+
+.contentRight .top-section-sim-2 .infos-bot li:hover{
+    margin-left: 10px;
+}
+
+.copyR {
+    background-color: var(--bleuFonce);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.copyR p {
+    margin: 30px;
+    color: white;
+    padding-left: 30%;
+    text-align: center;
+}
+
+
+@media (max-width: 900px) {
+
+    .navRight .boutonTog{
+        display: block;
+        z-index: 1;
+        color: white;
+    }
+
+    .navRight .dropMenu{
+        display: block;
+        z-index: 1;
+    }
+
+    .navRight .dropMenu li:hover .drop{
+        display: block;
+    }
+
+    .navRight .dropMenu .drop{
+        position: absolute;
+        display: flex;
+        margin-top: 3%;
+        margin-left: 60%;
+        flex-direction: column;
+        margin-bottom: 2%;
+        display: none;
+    }
+    
+    .navRight .dropMenu .drop li{
+        margin: 0;
+        display: block;
+        font-size: 10px;
+        font-weight: thin;
+    }
+    
+    .navRight .dropMenu .drop li a:hover {
+        border-bottom: 1px solid var(--bleuClair);
+    }
+
+    .section1Cont .cardSection1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        row-gap: 20px;
+    }
+
+    .section1Cont h2 {
+        font-size: 20px;
+    }
+
+    .section2Cont h2 {
+        font-size: 20px;
+    }
+
+    .section2Cont .sectCards2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section3 h2 {
+        font-size: 20px;
+    }
+    
+    .section3 .sectCards3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section4Cont h2 {
+        font-size: 20px;
+    }
+    
+    .section4Cont .sectCards4 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section5Cont h2 {
+        font-size: 20px;
+    }
+    
+    .section5Cont .sectCards5 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    header .Tete .teteContainer {
+        display: none;
+    }
+
+    .teteContainer .coordonnees {
+        display: block;
+        margin-bottom: 15px;
+    }
+    
+    .teteContainer .coordonnees .coods {
+       justify-content: center;
+    }
+
+    .teteContainer .icones{
+        display: flex;
+        justify-content: center;
+    }
+
+    .TeteDescript .navRight .menu{
+        display: none;
+    }
+
+    .TeteTitle{
+        padding-top: 80px;
+    }
+
+    .TeteTitle .titleContainer {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .titleContainer p {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 4%;
+        color: white;
+    }
+
+    .titleContainer .titleBtns{
+        display: block;
+    }
+
+    .titleContainer button{
+        margin-bottom: 3%;
+    }
+
+    header .cardTete {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        bottom: 0px;
+    }
+
+    .cardTete .cardContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 2%;
+    }
+
+    .cardContainer .card{
+        width: 100%;
+        display: block;
+        padding: 8px 0px;
+    }
+
+    .cardContainer .cardIcon{
+        width: 30%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sectCard5Cont .Item {
+        position: relative;
+        top: -20px;
+        text-align: center;
+        width: 40%;
+    }
+
+    /* footer */
+
+    footer{
+        padding-top: 30px;
+    }
+    .footerContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerContainer .contentLeft{
+        width: 94%;
+        margin-bottom: 20px;
+    }
+
+    .footerContainer .contentRight{
+        width: 94%;
+        display: block;
+        padding-bottom: 0px;
+        margin-bottom: 20px;
+    }
+
+    footer .copyR{
+        position: relative;
+        overflow: hidden;
+    }
+
+    footer .copyR p{
+        padding-left: 0;
+        text-align: center;
+    }
+
+    footer .top-section{
+        margin-bottom: 20px;
+    }
+}
+
+
