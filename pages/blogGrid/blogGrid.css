@@ -12,13 +12,12 @@
 
 
 
-
-
 /* main */
 .container_grid{
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    gap: 30px;
+    grid-template-columns: 20% 20% 20%;
+    gap: 10px;
+    margin: 90px;
     padding: 10px;
     justify-content: center;
     /* text-align: center */
@@ -102,7 +101,6 @@ p{
     display: flex;
     margin-top: 2%;
 
-
 }
 .text-image{
     background-color: var(--bleuClair1);
@@ -166,15 +164,22 @@ button{
 }
 
 .logos{
-    text-align: center;
-    word-spacing:10px;
-    width: 100%;
-    padding: 30px; 
+    display: grid;
+    grid-template-columns: 12%  12%  12%  12%  12%  12%  12%  12%;
+    margin: 50px;
+    padding: 50px; 
 }
-/* .logo_samsung{
-    margin-left: 1020px;
-    margin-bottom: 400px;
-} */
+
+
+@media only screen and (max-width:580px) {
+    .image{
+        width: 100%;
+        text-align: center;
+        margin-left: -15px;
+        margin-top: -25px;  
+    }
+    
+
 
 
 
@@ -183,6 +188,8 @@ button{
     .container_grid{
         display: grid;
         grid-template-columns: 95% ;
+        gap: 10px;
+        margin: 90px;
         /* gap: 30px; */
         padding: 10px;
         justify-content: center;
@@ -203,7 +210,7 @@ button{
     }
     
     .image{
-        width: 110%;
+        width: 123%;
         text-align: center;
         margin-left: -15px;
         margin-top: -25px;  
@@ -341,7 +348,9 @@ button{
     .container_grid{
         display: grid;
         grid-template-columns: 30% 30% 30%;
-        gap: 30px;
+        /* gap: 30px; */
+        gap: 10px;
+        margin: 90px;
         padding: 10px;
         justify-content: center;
         /* text-align: center */
@@ -361,10 +370,10 @@ button{
     }
     
     .image{
-        width: 110%;
+        width: 115%;
         text-align: center;
         margin-left: -15px;
-        margin-top: -25px;  
+        margin-top: -18px;  
     }
     
     
@@ -494,7 +503,9 @@ button{
     .container_grid{
         display: grid;
         grid-template-columns: 30% 30% 30%;
-        gap: 30px;
+        gap: 10px;
+        margin: 90px;
+        /* gap: 30px; */
         padding: 10px;
         justify-content: center;
         /* text-align: center */
@@ -509,12 +520,12 @@ button{
         border-radius: 7px;
         line-height: 17px;
         padding: 15px;
-        height: 355px;
+        height: auto;
         margin-bottom: 35px;
     }
     
     .image{
-        width: 110%;
+        width: 109%;
         text-align: center;
         margin-left: -15px;
         margin-top: -25px;  
@@ -523,7 +534,7 @@ button{
     
     input{
         padding:5px;
-        width: 270px;
+        width: auto;
         /* margin-top: 1%; */
     } 
     .fa-magnifying-glass{
@@ -642,3 +653,4 @@ button{
 
 }
     
+}
