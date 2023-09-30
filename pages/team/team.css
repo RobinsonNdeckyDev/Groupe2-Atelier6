@@ -3,7 +3,7 @@ header .Tete .teteContainer {
     border: 1px solid black;
     display: flex;
     background-color: var(--bleuFonce);
-    padding: 10px 20px;
+    padding: 15px 20px;
     justify-content: space-between;
 }
 
@@ -30,10 +30,27 @@ header .headTete {
     color: white;
 }
 
-.icones span {
+.icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones .sociaux {
     margin-left: 15px;
-    padding: 5px;
+    padding: 6px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones span a {
+    text-decoration: none;
+    color: white;
 }
 
 header .detailBack {
@@ -116,6 +133,11 @@ nav .nav-left i {
     border: none;
 }
 
+.navRight .boutonNav button a{
+    text-decoration: none;
+    color: white;
+}
+
 .navRight .boutonTog {
     display: none;
 }
@@ -131,6 +153,12 @@ nav .nav-left i {
     border-radius: 15px;
     overflow: hidden;
     transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.navRight .menu .navSearch{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
 }
 
 .navRight .dropMenu.open {
@@ -181,6 +209,41 @@ nav .nav-left i {
 
 .navRight .dropMenu li .active {
     text-decoration: underline 3px var(--vert);
+}
+
+.navRight .menu .drop {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(44, 44, 184, 0.637);
+}
+
+.navRight .menu .drop li {
+    padding-bottom: 1%;
+    margin: 0;
+    display: none;
+    font-size: 12px;
+    font-weight: thin;
+    margin: 5px;
+}
+
+.navRight .menu ul li:hover .drop li {
+    display: block;
+    color: var(--bleuFonce);
+}
+
+.navRight .menu .drop li a:hover {
+    border-bottom: 4px solid var(--bleuClair);
+}
+
+.TeteDetails nav .activeLink {
+    text-decoration: underline 3px solid var(--bleuClair);
+    text-underline-offset: 2rem;
+}
+
+.navRight ul .hovLink:hover {
+    text-decoration: underline 3px solid var(--bleuClair);
+    text-underline-offset: 2rem;
 }
 
 /*  TeteTile */
@@ -270,6 +333,12 @@ nav .nav-left i {
     width: 100%;
 }
 
+.sectCard4Cont .img img:hover{
+    transform: scale(0.9);
+    border-radius: 20px;
+    border: 5px double var(--bleuFonce);
+}
+
 .sectCard4Cont .sectCard4Body {
     padding: 4% 10%;
 }
@@ -293,7 +362,60 @@ nav .nav-left i {
     background-color: chocolate;
 }
 
+/* section Logos */
 
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4% 10%;
+}
+
+.logoContainer {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    padding: 1%;
+}
+
+.logoContainer .slideLogo {
+    -webkit-animation: scroll 30s linear infinite;
+    animation: scroll 30s linear infinite;
+    display: flex;
+    width: calc(150px * 14);
+}
+
+.logoContainer .slide {
+    width: 150px;
+    height: 60px;
+    margin-left: 20px;
+}
+
+.logoContainer .slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-150px * 7));
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-150px * 7));
+    }
+}
 
 
 /* Footer */
@@ -414,6 +536,10 @@ footer .footerContainer {
     color: white;
 }
 
+.media-bot .botIcon i:hover {
+    color: var(--bleuFonce);
+}
+
 .contentRight .top-section-sim-2 .infos-bot li {
     list-style-type: none;
     margin-bottom: 10px;
@@ -427,6 +553,10 @@ footer .footerContainer {
 .contentRight .top-section-sim-2 .infos-bot li a {
     text-decoration: none;
     color: white;
+}
+
+.contentRight .top-section-sim-2 .infos-bot li:hover {
+    margin-left: 10px;
 }
 
 .copyR {
@@ -461,6 +591,32 @@ footer .footerContainer {
     header .Tete .teteContainer {
         display: none;
     }
+
+
+         .navRight .dropMenu li:hover .drop {
+             display: block;
+         }
+    
+         .navRight .dropMenu .drop {
+             position: absolute;
+             display: flex;
+             margin-top: 3%;
+             margin-left: 60%;
+             flex-direction: column;
+             margin-bottom: 2%;
+             display: none;
+         }
+    
+         .navRight .dropMenu .drop li {
+             margin: 0;
+             display: block;
+             font-size: 10px;
+             font-weight: thin;
+         }
+    
+         .navRight .dropMenu .drop li a:hover {
+             border-bottom: 1px solid var(--bleuClair);
+         }
     
         .teteContainer .coordonnees {
             display: block;

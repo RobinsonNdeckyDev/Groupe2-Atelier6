@@ -1,10 +1,13 @@
 /* Header */
+/* header .Tete{
+    padding: 1%;
+} */
 
 header .Tete .teteContainer{
     border: 1px solid black;
     display: flex;
     background-color: var(--bleuFonce);
-    padding: 10px 20px;
+    padding: 15px 20px;
     justify-content: space-between;
 }
 
@@ -31,10 +34,27 @@ header .headTete{
     color: white;
 }
 
-.icones span{
+.icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones .sociaux{
     margin-left: 15px;
-    padding: 5px;
+    padding: 6px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones span a{
+    text-decoration: none;
+    color: white;
 }
 
 header .detailBack{
@@ -163,6 +183,7 @@ nav .nav-left i{
     font-weight: thin;
 }
 
+
 .navRight .dropMenu ul li:hover .drop li {
     display: block;
     color: var(--bleuFonce);
@@ -170,6 +191,7 @@ nav .nav-left i{
 
 .navRight .dropMenu .drop li a:hover {
     border-bottom: 4px solid var(--bleuClair);
+    color: var(--bleuFonce);
 }
 
 
@@ -211,6 +233,7 @@ nav .nav-left i{
     position: absolute;
     display: flex;
     flex-direction: column;
+    background-color: rgba(44, 44, 184, 0.637);
 }
 
 .navRight .drop li{
@@ -219,6 +242,7 @@ nav .nav-left i{
     display: none;
     font-size: 12px;
     font-weight: thin;
+    margin: 5px;
 }
 
 .navRight ul li:hover .drop li{
@@ -228,6 +252,21 @@ nav .nav-left i{
 
 .navRight .drop li a:hover{
     border-bottom: 4px solid var(--bleuClair);
+}
+
+.TeteDetails nav .activeLink {
+    text-decoration: underline 3px solid var(--bleuClair);
+    text-underline-offset: 2rem;
+}
+
+.TeteDetails nav .activeLink {
+    text-decoration: underline 3px solid var(--bleuClair);
+    text-underline-offset: 2rem;
+}
+
+.navRight ul .hovLink:hover {
+    text-decoration: underline 3px solid var(--bleuClair);
+    text-underline-offset: 2rem;
 }
 
 /*  TeteTile */
@@ -268,7 +307,6 @@ header .headerBack {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-
 }
 
 .titleContainer .titleBtns button{
@@ -276,6 +314,7 @@ header .headerBack {
     border: none;
     font-weight: bold;
     color: white;
+    cursor: pointer;
 }
 
 .titleContainer .titleBtns button:nth-child(1){
@@ -620,6 +659,12 @@ main .section3{
 
 .sectCard4Cont .img img{
     width: 100%;
+    transform: rotate(0deg);
+    transition: scale(0.9) 5s;
+}
+
+.sectCard4Cont .img img:hover{
+    transform: rotate(5deg);
 }
 
 .sectCard4Cont .sectCard4Body{
