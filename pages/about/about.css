@@ -224,7 +224,7 @@ nav .nav-left i {
     display: none;
     font-size: 12px;
     font-weight: thin;
-    margin: 5px;
+    /* margin: 5px; */
 }
 
 .navRight .menu ul li:hover .drop li {
@@ -488,7 +488,7 @@ footer .footerContainer {
         margin-left: 60%;
         flex-direction: column;
         margin-bottom: 2%;
-        display: none;
+        /* display: none; */
     }
 
     .navRight .dropMenu .drop li {
