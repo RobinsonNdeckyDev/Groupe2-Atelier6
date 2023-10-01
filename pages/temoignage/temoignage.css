@@ -223,9 +223,8 @@ nav .nav-left i {
     margin: 0;
     display: none;
     font-size: 12px;
-    font-weight: thin;
-    margin: 5px;
-}
+        font-weight: thin;
+    }
 
 .navRight .menu ul li:hover .drop li {
     display: block;
@@ -298,6 +297,28 @@ nav .nav-left i {
 /* header */
 
 /* main */
+.title-h3{
+    color: var(--bleuClair);
+    margin-bottom: 1%;
+}
+.title-p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 4%;
+    gap: 1%;
+}
+.traits {
+    display: grid;
+    grid-template-columns: 70px 30px;
+    gap: 5px;
+    justify-content: center;
+}
+.trait-left, .trait-right {
+    border-top: 4px solid #0599D7;
+    margin-top: -16px;
+    margin-bottom: 35px;
+    border-radius: 3px;
+}
 #festimoniale {
     width: 60%;
     margin: 70px auto;
@@ -594,7 +615,6 @@ footer .footerContainer {
         margin-left: 60%;
         flex-direction: column;
         margin-bottom: 2%;
-        display: none;
     }
 
     .navRight .dropMenu .drop li {
@@ -648,7 +668,19 @@ footer .footerContainer {
 
     /* header */
 
-
+    /* main */
+    .festi-box{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 70%;
+        margin: 0 auto;
+        gap: 5%;
+        /* border: 1px solid red; */
+    }
+    .festi-box-items{
+        width: 81%;
+    }
+    /* main */
     /* footer */
 
     footer {
