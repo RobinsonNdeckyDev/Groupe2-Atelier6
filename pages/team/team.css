@@ -296,6 +296,25 @@ nav .nav-left i {
 }
 
 
+/* Sroll-bar */
+
+.scroll-bar {
+    position: fixed;
+    top: 52vh;
+    left: 94%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: #0599D7;
+    cursor: pointer;
+}
+
+/* End scroll-bar */
+
+
 /* Section4 */
 
 .section4 {

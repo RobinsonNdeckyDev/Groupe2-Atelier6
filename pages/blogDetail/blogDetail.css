@@ -981,6 +981,24 @@ footer .footerContainer {
         margin-bottom: 3%;
     }
 
+/* Sroll-bar */
+
+.scroll-bar {
+    position: fixed;
+    top: 52vh;
+    left: 94%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: #0599D7;
+    cursor: pointer;
+}
+
+/* End scroll-bar */
+
     /* Main */
 
     /* footer */

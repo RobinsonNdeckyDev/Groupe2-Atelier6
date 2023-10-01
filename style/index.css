@@ -21,3 +21,10 @@ html{
 body{
     font-family: verdana;
 }
+
+
+@media(max-width: 400px) {
+    .scroll-bar {
+        left: 80%;
+    }
+}
