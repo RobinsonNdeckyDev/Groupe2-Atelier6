@@ -441,7 +441,7 @@ nav .nav-left i {
 
 #service {
     width: 60%;
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: center;
 }
  .title-h3 {
@@ -453,17 +453,18 @@ nav .nav-left i {
     font-size: 28px;
     font-weight: 700;
     color: #100F39;
-    margin-top: -12px;
+    margin-top: 25px;
 }
 .traits {
     display: grid;
     grid-template-columns: 70px 30px;
     gap: 5px;
     justify-content: center;
+    margin-top: 20px;
 }
 .trait-left, .trait-right {
     border-top: 4px solid #0599D7;
-    margin-top: -16px;
+    /* margin-top: -16px; */
     margin-bottom: 35px;
     border-radius: 3px;
 }
@@ -492,14 +493,15 @@ nav .nav-left i {
     flex-wrap: wrap;
     place-content: center;
     transform: rotate(45deg);
+    margin-bottom: 15px;
 }
 .losange i {
     transform: rotate(-45deg);
     color: white;
 }
-.box-items p {
+/* .box-items p {
     margin-top: -20px;
-}
+} */
 
 /* ****************************************************
                 Section Testimoniale

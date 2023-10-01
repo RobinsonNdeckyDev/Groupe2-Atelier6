@@ -459,7 +459,7 @@ ul {
 
 #contact {
     width: 60%;
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: center;
 }
 
@@ -467,6 +467,7 @@ ul {
     color: #0599D7;
     font-weight: 700;
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .title-p {
@@ -486,7 +487,7 @@ ul {
 .trait-left,
 .trait-right {
     border-top: 4px solid #0599D7;
-    margin-top: -16px;
+    margin-top: 20px;
     margin-bottom: 35px;
     border-radius: 3px;
 }
@@ -521,7 +522,7 @@ ul {
     gap: 0;
 }
 .content-ele a {
-    margin-top: -16px;
+    /* margin-top: -16px; */
     color: var(--base-color);
 }
 .content-ele h4 {
@@ -533,9 +534,9 @@ ul {
     color: white;
 }
 
-.box-items p {
+/* .box-items p {
     margin-top: -20px;
-}
+} */
 .other-contact {
     width: 60%;
     margin: 40px auto;
