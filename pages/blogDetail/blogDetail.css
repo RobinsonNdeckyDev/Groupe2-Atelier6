@@ -163,7 +163,7 @@ nav .nav-left i {
 }
 
 .navRight .dropMenu.open {
-    height: 340px;
+    height: 440px;
 }
 
 .navRight .dropMenu li {
@@ -972,6 +972,13 @@ footer .footerContainer {
 
     main .detailRight{
         width: 100%;
+    }
+
+    main form .formTop {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 3%;
     }
 
     /* Main */
