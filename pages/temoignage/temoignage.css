@@ -223,8 +223,9 @@ nav .nav-left i {
     margin: 0;
     display: none;
     font-size: 12px;
-        font-weight: thin;
-    }
+    font-weight: thin;
+    margin: 5px;
+}
 
 .navRight .menu ul li:hover .drop li {
     display: block;
@@ -240,7 +241,7 @@ nav .nav-left i {
     text-underline-offset: 2rem;
 }
 
-.navRight ul .hovLink:hover {
+.navRight .menu ul .hovLink:hover {
     text-decoration: underline 3px solid var(--bleuClair);
     text-underline-offset: 2rem;
 }
@@ -594,40 +595,40 @@ footer .footerContainer {
         color: white;
     }
 
-    .navRight .dropMenu {
-        display: block;
-        z-index: 1;
-    }
-
-    header .Tete .teteContainer {
-        display: none;
-    }
-
-
-    .navRight .dropMenu li:hover .drop {
-        display: block;
-    }
-
-    .navRight .dropMenu .drop {
-        position: absolute;
-        display: flex;
-        margin-top: 3%;
-        margin-left: 60%;
-        flex-direction: column;
-        margin-bottom: 2%;
-    }
-
-    .navRight .dropMenu .drop li {
-        margin: 0;
-        display: block;
-        font-size: 10px;
-        font-weight: thin;
-    }
-
-    .navRight .dropMenu .drop li a:hover {
-        border-bottom: 1px solid var(--bleuClair);
-    }
-
+        .navRight .dropMenu {
+            display: block;
+            z-index: 1;
+        }
+    
+        header .Tete .teteContainer {
+            display: none;
+        }
+    
+    
+        .navRight .dropMenu li:hover .drop {
+            display: block;
+        }
+    
+        .navRight .dropMenu .drop {
+            position: absolute;
+            display: flex;
+            margin-top: 3%;
+            margin-left: 60%;
+            flex-direction: column;
+            margin-bottom: 2%;
+            display: none;
+        }
+    
+        .navRight .dropMenu .drop li {
+            margin: 0;
+            display: block;
+            font-size: 10px;
+            font-weight: thin;
+        }
+    
+        .navRight .dropMenu .drop li a:hover {
+            border-bottom: 1px solid var(--bleuClair);
+        }
     .teteContainer .coordonnees {
         display: block;
         margin-bottom: 15px;
