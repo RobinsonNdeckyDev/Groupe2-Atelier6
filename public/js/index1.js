@@ -11,7 +11,7 @@ boutonTog.onclick = function () {
 };
 
 
-const btn=document.querySelector('.scrollBtn');
+const btn=document.querySelector('.sroll-bar');
 btn.addEventListener('click',() => {
     window.scrollTo({
         top:0,
