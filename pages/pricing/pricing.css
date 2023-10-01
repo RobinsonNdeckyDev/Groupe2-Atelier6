@@ -360,6 +360,24 @@ nav .nav-left i {
 
 /* main */
 
+/* Sroll-bar */
+
+.scroll-bar {
+    position: fixed;
+    top: 52vh;
+    left: 94%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: #0599D7;
+    cursor: pointer;
+}
+
+/* End scroll-bar */
+
 /* pricing */
 .prices{
     /* border: 1px solid black; */
