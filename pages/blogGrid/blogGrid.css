@@ -455,6 +455,7 @@ nav .nav-left i {
 .pagination {
     /* border: 1px solid; */
     margin-bottom: 30px;
+    margin-left: 9%;
 }
 
 .pagination a {
